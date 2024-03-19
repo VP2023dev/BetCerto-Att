@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetCerto - Apostas ao vivo todo dia</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+
+<body>,
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Imagem do logo" width="6%"></a>
+        </div>
+        <div class="loginregister">
+            <ul>
+                <li class="loginregister">
+                    <input type="text" placeholder="Usuário">
+                    <input type="text" placeholder="Senha">
+                    <a href="#">Login &#128274;</a>
+                    <a href="#">Abrir conta</a>
+                </li>
+            </ul>
+        </div>
+        <div class="esquecer">
+            <a href="esquecer.html">Esqueceu sua Senha</a>
+        </div>
+        <div id="ticket-response"></div>
+
+        <script src="script.js"></script>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="esportes.html">Esportes</a></li>
+            <li><a href="extanche.html">Extanche</a></li>
+            <li><a href="aovivo.html">Ao Vivo</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li id="contato"><a href="contato.html">Contato</a></li>
+            <li><a href="entradas.html">Entradas</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <div id="ticket-form">
+            <h2>Envie um Ticket</h2>
+            <form id="ticket-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 BetCerto. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
