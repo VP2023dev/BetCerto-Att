@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetCerto - Apostas ao vivo todo dia</title>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-jRb8dCfD5Q+6Pl5kg6+jAIk9wny7GXVz0lyv6LcSqP/jJ6HZ78fn+Ey2rSW69g7WjMzpxcMRL6G2xLbQjwdd5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Imagem do logo" width="6%"></a>
+        </div>
+        <div class="loginregister">
+            <ul>
+                <li class="loginregister">
+                    <input type="text" placeholder="Usuário">
+                    <input type="text" placeholder="Senha">
+                    <a href="#">Login &#128274;</a>
+                    <a href="#">Abrir conta</a>
+                </li>
+            </ul>
+        </div>
+        <div class="esquecer">
+            <a href="esquecer.html">Esqueceu sua Senha</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="esportes.html">Esportes</a></li>
+            <li><a href="extanche.html">Extanche</a></li>
+            <li><a href="aovivo.html">Ao Vivo</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="entradas.html">Entradas</a></li>
+        </ul>
+    </nav>
+    <aside class="borda-aside">
+        <div class="campeonatos">
+            <ul>
+
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class="container">
+            <h2>Registro de Entradas</h2>
+            <div class="formulario">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" placeholder="Digite o valor">
+
+                <label for="odd">Odd:</label>
+                <input type="text" id="odd" placeholder="Digite a odd">
+
+                <label for="tipo">Tipo de Aposta:</label>
+                <input type="text" id="tipo" placeholder="Digite o tipo de aposta">
+
+                <label for="mercado">Jogo:</label>
+                <input type="text" id="mercado" placeholder="Digite o jogo">
+
+                <button onclick="registrarEntrada()">Registrar</button>
+            </div>
+
+            <div class="registros" id="registros">
+                <!-- As entradas registradas serão exibidas aqui -->
+            </div>
+        </div>
+        <div class="registros" id="registros">
+            <!-- As entradas registradas serão exibidas aqui -->
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <p>© 2024 BetCerto. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
